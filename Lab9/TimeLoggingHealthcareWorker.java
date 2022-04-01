@@ -1,7 +1,7 @@
 package structural;
 
 
-import java.sql.Timestamp;
+
 import java.util.Date;
 
 public class TimeLoggingHealthcareWorker extends HealthcareWorkerDecorator{
@@ -12,8 +12,8 @@ public class TimeLoggingHealthcareWorker extends HealthcareWorkerDecorator{
 
     @Override
     public void service() {
-        Date date = new Date();
-        System.out.print(date + ": ");
-        super.service();
+        System.out.print(new Date() + ": ");
+        employee.service();
+    
     }
 }

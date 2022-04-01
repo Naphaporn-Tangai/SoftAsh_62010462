@@ -1,4 +1,3 @@
-// Please DO NOT MODIFY THIS FILE
 package structural;
 
 public class Cardiologist extends HealthcareWorker {

@@ -1,20 +1,20 @@
 package structural;
 
-public abstract class HealthcareWorkerDecorator extends HealthcareWorker {
-    protected HealthcareWorker member;
+public class HealthcareWorkerDecorator extends HealthcareWorker {
+    HealthcareWorker employee;
 
-    public HealthcareWorkerDecorator(HealthcareWorker member) {
-        super(member);
-        this.member = member;
+    public HealthcareWorkerDecorator(HealthcareWorker worker) {
+        super(employee);
+        this.employee = employee;
     }
 
     @Override
     public void service() {
-        member.service();
+        this.employee.service();
     }
 
     @Override
     public double getPrice() {
-        return member.getPrice();
+        return this.employee.getPrice();
     }
 }

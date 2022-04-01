@@ -1,4 +1,4 @@
-// Please DO NOT MODIFY THIS FILE
+
 package structural;
 
 public abstract class HealthcareWorker implements HealthcareServiceable {
