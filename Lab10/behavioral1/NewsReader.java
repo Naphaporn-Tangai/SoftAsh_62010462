@@ -2,20 +2,19 @@ package edu.parinya.softarchdesign.behavioral;
 
 
 public class NewsReader implements NewsSubscriber {
-    // You need to implement this class
-    private String name;
+    private String NewsReader;
 
-    public NewsReader(String string) {
-        name = string;
+    public NewsReader(String name) {
+        NewsReader = name;
     }
 
     @Override
-    public void update(String content) {
-        System.out.println(name+" => gets : "+content);
+    public void update(String detail) {
+        System.out.println( NewsReader+" : "+ detail);
     }
 
     public String getName() {
-        return name;
+        return NewsReader;
     }
 
 }
