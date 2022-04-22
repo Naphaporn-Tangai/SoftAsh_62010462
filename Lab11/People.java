@@ -1,6 +1,5 @@
 package edu.parinya.softarchdesign.behavior2;
 
-// DO NOT MODIFY ANYTHING BELOW THIS LINE!!
 import java.io.PrintStream;
 import java.util.LinkedList;
 import java.util.List;
